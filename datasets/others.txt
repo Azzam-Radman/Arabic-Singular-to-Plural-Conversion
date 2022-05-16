@@ -1,0 +1,24 @@
+Some of the datasets are large in size and cannot be uploaded to GitHub, so we add the downloadable links.
+As you download these datasets, they will be downloaded with their names:
+
+#  Pre_training Data Preparation Notebook:
+1. https://drive.google.com/uc?export=download&id=1lQFU7XFy82-1dE5kPK7yDLpJ6tleycCC
+2. https://drive.google.com/uc?export=download&id=1-A7OVKYutL6ZIUfy_yewUN68jK0VmhHd
+3. https://drive.google.com/uc?export=download&id=1-1IEr0bMwyAZHOKGpjsbMM6ttjnwQmDZ
+
+# Character-BERT Notebook:
+1. https://drive.google.com/uc?export=download&id=1lQFU7XFy82-1dE5kPK7yDLpJ6tleycCC
+2. https://drive.google.com/uc?export=download&id=1zu7Ohjgsodw3ffJVpAHDZfj2UIWT39QE
+3. https://drive.google.com/uc?export=download&id=1-1RggfVygU5svgMeZjgfK1Su_-AXZ_6V
+
+# Encoder-Decoder Model Notebook:
+1. https://raw.githubusercontent.com/sigmorphon/2022InflectionST/main/part2/ara_1000.train
+2. https://raw.githubusercontent.com/sigmorphon/2022InflectionST/main/part2/ara.dev
+3. https://drive.google.com/uc?export=download&id=1lQFU7XFy82-1dE5kPK7yDLpJ6tleycCC
+4. https://drive.google.com/uc?export=download&id=1Qus-FZGOscfRDqCyKW2bftCT5tVOLZhK
+
+# Error Analysis Notebook:
+1. https://drive.google.com/uc?export=download&id=1lQFU7XFy82-1dE5kPK7yDLpJ6tleycCC
+2. https://raw.githubusercontent.com/sigmorphon/2022InflectionST/main/part2/ara_1000.train
+3. https://raw.githubusercontent.com/sigmorphon/2022InflectionST/main/part2/ara.dev
+4. https://drive.google.com/uc?export=download&id=1VbSc6ptY_v4M0g5_XexihuYgvM4D5xTl

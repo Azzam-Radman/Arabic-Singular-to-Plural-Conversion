@@ -1,4 +1,4 @@
-# Arabic-Singular-to-Plural-Conversion
+# Arabic Singular-to-Plural Conversion
 
 This repository contains the data files and Jupyter notebooks required to reproduce the models and results reported in out *"Neural Arabic Singular-to-Plural Conversion with a Pre-trained Character-BERT and Transformer Fusion Mechanism"* paper.
 

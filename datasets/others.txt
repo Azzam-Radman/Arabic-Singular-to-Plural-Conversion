@@ -22,3 +22,6 @@ As you download these datasets, they will be downloaded with their names:
 2. https://raw.githubusercontent.com/sigmorphon/2022InflectionST/main/part2/ara_1000.train
 3. https://raw.githubusercontent.com/sigmorphon/2022InflectionST/main/part2/ara.dev
 4. https://drive.google.com/uc?export=download&id=1VbSc6ptY_v4M0g5_XexihuYgvM4D5xTl
+
+# Gradients dictionary
+1. https://drive.google.com/file/d/11VBml_G8VAbBYhH9M4vtPjISHldpk3q4/view?usp=sharing

@@ -10,3 +10,4 @@ The links provided in the notebooks are downloadable, and hence no extra coding 
 1. [Datasets](#datasets)
 
 ## Datasets
+There are two datasets used in this work, one for the pre-training stage and the other of the downstream task. The pre-training dataset is the [Arabic Wikipedia (test split)](https://www.kaggle.com/datasets/abedkhooli/arabic-bert-corpus/discussion/129597) which has been cleaned a made publicly avaiable. 

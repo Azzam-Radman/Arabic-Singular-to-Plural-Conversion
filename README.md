@@ -7,7 +7,7 @@ This work aims at approaching the MIG task suggested by [SIGMORPHON](https://git
 The links provided in the notebooks are downloadable, and hence no extra coding is required to enable their running. It is necessary to run the notebooks using Google Colab, except for the second notebook which was run on Kaggle kernels, otherwise when reading the files from their paths an error will be raised, unless the paths are corrected correspondingly.
 
 ## Table of Contents
-1. [Datasets](#1. datasets)
+1. [Datasets](#1.\space datasets)
 2. 
 
 ## 1. Datasets

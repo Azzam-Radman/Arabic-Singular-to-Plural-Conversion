@@ -17,4 +17,4 @@ The downstream task datasets are probived by the [SIGMORPHON](https://github.com
 ## 2. Model Architectures
 Firs, we start with pre-training a Character-BERT (CBERT) for the first time in the Arabic NLP domain. 1,134,950 Arabic unique words are used for this stage, and the model is trained on an MLM task. 
 Two different architectures are developed in this work, namely the ***fused*** and the ***direct*** architectures. The first extracts the embeddings from CBERT and feed them to both the encoder and decoder parts of the transformer. While the second directly employs CBERT as and encoder for the Transfomer. Both the ***fused*** and the ***direct*** architectures can be illustrated in figures 
-<img scr="figures/Computational%20Linguistics%20Model-Direct.png" width=100>
+<img scr="figures/Computational%20Linguistics%20Model-Direct.png" width="100" >

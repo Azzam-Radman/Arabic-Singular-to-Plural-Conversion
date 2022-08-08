@@ -19,8 +19,8 @@ Firs, we start with pre-training a Character-BERT (CBERT) for the first time in 
 Two different architectures are developed in this work, namely the ***fused*** and the ***direct*** architectures. The first extracts the embeddings from CBERT and feed them to both the encoder and decoder parts of the transformer. While the second directly employs CBERT as and encoder for the Transfomer. Both the ***fused*** and the ***direct*** architectures can be illustrated in the next two diagrams.
 
 ### Fused Architecture
-![Fused Architecture](figures/Computational%20Linguistics%20Model-Fused.png)
-
+<img src="/figures/Computational%20Linguistics%20Model-Fused.png"  alt="Fused Architecture" width="1200">
 
 ### Direct Architecture
-![Direct Architecture](figures/Computational%20Linguistics%20Model-Direct.png)
+
+<img src="/figures/Computational%20Linguistics%20Model-Direct.png"  alt="Direct Architecture" width="700">

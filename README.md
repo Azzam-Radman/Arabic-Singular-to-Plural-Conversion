@@ -23,4 +23,4 @@ Two different architectures are developed in this work, namely the ***fused*** a
 
 ### Direct Architecture
 
-<img src="/figures/Computational%20Linguistics%20Model-Direct.png"  alt="Direct Architecture" width="700">
+<img src="/figures/Computational%20Linguistics%20Model-Direct.png"  alt="Direct Architecture" width="600">

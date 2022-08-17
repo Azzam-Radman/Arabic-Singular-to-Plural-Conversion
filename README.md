@@ -8,6 +8,7 @@ The links provided in the notebooks are downloadable, and hence no extra coding 
 
 ## Table of Contents
 1. [Datasets](#1.datasets)
+2. [Model Architectures](#archs)
 
 <a name=1.datasets></a>
 ## 1. Datasets
@@ -15,6 +16,7 @@ There are two datasets used in this work, one for the pre-training stage and the
 
 The downstream task datasets are probived by the [SIGMORPHON](https://github.com/sigmorphon) competition organizers and are publicly avaiable [here](https://github.com/sigmorphon/2022InflectionST/tree/main/part2).
 
+<a name="archs"></a>
 ## 2. Model Architectures
 Firs, we start with pre-training a Character-BERT (CBERT) for the first time in the Arabic NLP domain. 1,134,950 Arabic unique words are used for this stage, and the model is trained on an MLM task. 
 Two different architectures are developed in this work, namely the ***fused*** and the ***direct*** architectures. The first extracts the embeddings from CBERT and feed them to both the encoder and decoder parts of the transformer. While the second directly employs CBERT as and encoder for the Transfomer. Both the ***fused*** and the ***direct*** architectures can be illustrated in the next two diagrams.

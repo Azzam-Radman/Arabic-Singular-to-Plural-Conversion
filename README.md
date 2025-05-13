@@ -101,4 +101,9 @@ We introduce two different Transformer-based approaches to plural conversion:
 This project is licensed under the MIT License.
 
 ## 📬 Citation
-If you use this work, please cite our paper [Link](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QUGRpw4AAAAJ&citation_for_view=QUGRpw4AAAAJ:d1gkVwhDpl0C).
+If you use this work, please cite our [paper](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QUGRpw4AAAAJ&citation_for_view=QUGRpw4AAAAJ:d1gkVwhDpl0C).
+
+## 🤝 Acknowledgments
+[SIGMORPHON 2022](https://sigmorphon.github.io/sharedtasks/2022/)
+
+[Abed Khooli](https://github.com/abedkhooli) for the Arabic BERT corpus

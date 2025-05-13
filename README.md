@@ -1,29 +1,104 @@
-# Arabic Singular-to-Plural Conversion
+<p align="center">
+  <img src="https://img.shields.io/github/license/Azzam-Radman/Arabic-Singular-to-Plural-Conversion?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/top/Azzam-Radman/Arabic-Singular-to-Plural-Conversion?style=flat-square" />
+  <img src="https://img.shields.io/badge/Model-BERT%2FTransformer-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Platform-Colab%2FKaggle-orange?style=flat-square" />
+</p>
 
-This repository contains the data files and Jupyter notebooks required to reproduce the models and results reported in our *"Neural Arabic Singular-to-Plural Conversion with a Pre-trained Character-BERT and a Fused Transformer"* paper.
+<h1 align="center">Arabic Singular-to-Plural Conversion</h1>
 
-This work aims at approaching the MIG task suggested by [SIGMORPHON](https://github.com/sigmorphon/2022InflectionST/blob/main/part2/README.md). We start with pre-training an Arabic Character-BERT on the MLM task, and then fusing it into a transformer encoder-decoder model.
+<p align="center">
+  🔤 NLP model for converting Arabic singular words to their plural forms using Character-BERT and Transformer architectures.
+</p>
 
-The links provided in the notebooks are downloadable, and hence no extra coding is required to enable their running. It is necessary to run the notebooks using Google Colab, except for the second notebook which was run on Kaggle kernels, otherwise when reading the files from their paths an error will be raised, unless the paths are corrected correspondingly.
+---
 
-## Table of Contents
-1. [Datasets](#1.datasets)
-2. [Model Architectures](#archs)
+## 🚀 Overview
 
-<a name=1.datasets></a>
+This repository contains code, data, and models from our paper:
+
+> **"Neural Arabic Singular-to-Plural Conversion with a Pre-trained Character-BERT and a Fused Transformer"**
+
+Our research addresses the Morphological Inflection Generation (MIG) task proposed by [SIGMORPHON 2022](https://github.com/sigmorphon/2022InflectionST/blob/main/part2/README.md), focusing on Arabic—a morphologically rich language. We first pre-train an Arabic Character-BERT on a Masked Language Modeling (MLM) task, then incorporate it into two custom Transformer-based architectures.
+
+## 🧠 Key Features
+
+- **Arabic Character-BERT** pre-trained from scratch
+- **Two novel architectures**: Fused and Direct
+- **Colab and Kaggle ready** notebooks
+- Minimal setup, fully reproducible
+- Data-driven and modular design
+
+---
+
+## 📂 Table of Contents
+
+1. [Datasets](#1-datasets)
+2. [Model Architectures](#2-model-architectures)
+3. [Getting Started](#3-getting-started)
+4. [License](#4-license)
+
+---
+
 ## 1. Datasets
-There are two datasets used in this work, one for the pre-training stage and the other of the downstream task. The pre-training dataset is the [Arabic Wikipedia (test split)](https://www.kaggle.com/datasets/abedkhooli/arabic-bert-corpus/discussion/129597) which has been cleaned a made publicly avaiable by [Abed Khooli](https://www.kaggle.com/abedkhooli) on [Kaggle](https://www.kaggle.com/). 
 
-The downstream task datasets are probived by the [SIGMORPHON](https://github.com/sigmorphon) competition organizers and are publicly avaiable [here](https://github.com/sigmorphon/2022InflectionST/tree/main/part2).
+We use two datasets:
 
-<a name="archs"></a>
+- **Pre-training Dataset**  
+  Cleaned Arabic Wikipedia corpus from [Abed Khooli on Kaggle](https://www.kaggle.com/datasets/abedkhooli/arabic-bert-corpus/discussion/129597), containing over **1.1 million unique Arabic words**.
+
+- **Downstream MIG Dataset**  
+  Provided by [SIGMORPHON 2022](https://github.com/sigmorphon/2022InflectionST/tree/main/part2) organizers, containing singular-to-plural pairs in context.
+
+---
+
 ## 2. Model Architectures
-Firs, we start with pre-training a Character-BERT (CBERT) for the first time in the Arabic NLP domain. 1,134,950 Arabic unique words are used for this stage, and the model is trained on an MLM task. 
-Two different architectures are developed in this work, namely the ***fused*** and the ***direct*** architectures. The first extracts the embeddings from CBERT and feed them to both the encoder and decoder parts of the transformer. While the second directly employs CBERT as and encoder for the Transfomer. Both the ***fused*** and the ***direct*** architectures can be illustrated in the next two diagrams.
 
-### Fused Architecture
-<img src="/figures/Computational%20Linguistics%20Model-Fused.png"  alt="Fused Architecture" width="1200">
+We introduce two different Transformer-based approaches to plural conversion:
 
-### Direct Architecture
+### 🔁 Fused Architecture
 
-<img src="/figures/Computational%20Linguistics%20Model-Direct.png"  alt="Direct Architecture" width="600">
+- Embeddings from Character-BERT are **fused** into both the encoder and decoder of a Transformer.
+- Performs better on morphologically complex forms.
+
+<p align="center">
+  <img src="/figures/Computational%20Linguistics%20Model-Fused.png" alt="Fused Architecture" width="1000"/>
+</p>
+
+### ➡️ Direct Architecture
+
+- Character-BERT is used **directly** as the encoder in the Transformer pipeline.
+- Lightweight and faster in training.
+
+<p align="center">
+  <img src="/figures/Computational%20Linguistics%20Model-Direct.png" alt="Direct Architecture" width="600"/>
+</p>
+
+---
+
+## 3. Getting Started
+
+### ✅ Requirements
+
+- Python 3.x
+- Google Colab (recommended)
+- Kaggle (for Notebook 2)
+
+### 📘 Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Azzam-Radman/Arabic-Singular-to-Plural-Conversion.git
+   ```
+
+2. Open the notebooks in Google Colab or Kaggle Kernels.
+
+3. Run cells sequentially—no additional setup required.
+
+⚠️ Some paths may be hard-coded for Colab/Kaggle. If running locally, adjust file paths accordingly.
+
+## 4. License
+This project is licensed under the MIT License.
+
+## 📬 Citation
+If you use this work, please cite our paper [Link](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QUGRpw4AAAAJ&citation_for_view=QUGRpw4AAAAJ:d1gkVwhDpl0C).
